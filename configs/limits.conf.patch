@@ -1,0 +1,4 @@
+# Add these lines to /etc/security/limits.conf
+# Raises Asterisk file descriptor limit for load testing
+asterisk soft nofile 65535
+asterisk hard nofile 65535

@@ -1,0 +1,4 @@
+[02:48:29.239] {"event": "test"}
+[02:48:37.393] {"event": "ringing", "call_id": "1770850117.1609", "channel": "Local/600@internal-00000192;2", "caller": "", "callee": "600"}
+[02:48:37.934] {"event": "answered", "call_id": "1770850117.1609", "channel": "Local/600@internal-00000192;2", "caller": "", "callee": "600"}
+[02:48:38.440] {"event": "hangup", "call_id": "1770850117.1609", "channel": "Local/600@internal-00000192;2", "caller": "", "callee": "600", "cause": "0", "duration": "1", "billsec": "1", "hangup_by": ""}
