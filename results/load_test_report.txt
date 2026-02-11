@@ -1,0 +1,47 @@
+============================================================
+  ASTERISK LOAD TEST REPORT
+  Date: 2026-02-12T02:36:36.943623
+============================================================
+
+--- SYSTEM BASELINE ---
+  Pre-test CPU (idle):     1.7%
+  Pre-test Asterisk RSS:   89.34 MB
+  Post-test CPU (idle):    2.4%
+  Post-test Asterisk RSS:  99.23 MB
+  Memory growth:           9.89 MB
+
+--- AMI ORIGINATE RESULTS ---
+  Total calls:       200
+  Succeeded:         200
+  Failed:            0
+  Failure rate:      0.0%
+  Avg response:      10.5 ms
+  Min response:      10.17 ms
+  Max response:      10.58 ms
+  P95 response:      10.53 ms
+
+--- RESOURCE USAGE DURING TEST ---
+  Samples collected: 140
+
+  CPU Total:   avg=3.3%  peak=37.7%
+  CPU Asterisk: avg=3.4%  peak=40.7%
+  Memory RSS:  min=89.34 MB  max=99.11 MB  delta=9.77 MB
+  File Descs:  min=20  max=1221  delta=1201
+  Net In:      avg=0 B/s  peak=0 B/s
+  Net Out:     avg=0 B/s  peak=0 B/s
+
+--- PER-CALL RESOURCE ESTIMATES ---
+  Memory per call:   ~0.049 MB
+  FDs per call:      ~6.0
+  CPU per call:      ~0.204% of total
+  Net BW per call:   ~0 B/s
+
+--- CAPACITY ESTIMATE ---
+  Max calls by memory (~5GB free):  102040
+  Max calls by FDs (65535 limit):   10922
+  Estimated bottleneck:             10922 concurrent calls
+  Limiting factor:                  File Descriptors
+
+============================================================
+  END OF REPORT
+============================================================

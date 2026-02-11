@@ -1,0 +1,146 @@
+=============================================
+  PHASE 1: WSL RESOURCE DISCOVERY & BASELINE
+  Date: Thu Feb 12 02:10:44 +04 2026
+=============================================
+
+--- 1. CPU INFO ---
+CPU Count: 12
+CPU(s):              12
+On-line CPU(s) list: 0-11
+Model name:          AMD Ryzen 5 5600X 6-Core Processor
+Thread(s) per core:  2
+Core(s) per socket:  6
+CPU(s) scaling MHz:  100%
+CPU max MHz:         3701.0000
+CPU min MHz:         0.0000
+
+--- 2. MEMORY ---
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi        10Gi       4.9Gi        17Mi       223Mi       4.9Gi
+Swap:           48Gi       341Mi        47Gi
+
+MemTotal:       16688296 kB
+MemFree:         5161220 kB
+Buffers:           34032 kB
+Cached:           188576 kB
+SwapCached:            0 kB
+Active:           167556 kB
+Inactive:         157876 kB
+Active(anon):     103104 kB
+Inactive(anon):    17440 kB
+Active(file):      64452 kB
+Inactive(file):   140436 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:      50331648 kB
+SwapFree:       49982208 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        102824 kB
+Mapped:            71404 kB
+Shmem:             17720 kB
+
+--- 3. DISK I/O BASELINE ---
+
+--- 4. NETWORK (LOOPBACK) ---
+(iperf3 not installed - skipped)
+
+--- 5. WSL-SPECIFIC LIMITS ---
+Kernel:
+Linux version 4.4.0-19041-Microsoft (Microsoft@Microsoft.com) (gcc version 5.4.0 (GCC) ) #3570-Microsoft Fri Sep 29 17:00:00 PST 2023
+
+ulimit -a:
+real-time non-blocking time  (microseconds, -R) unlimited
+core file size              (blocks, -c) 0
+data seg size               (kbytes, -d) unlimited
+scheduling priority                 (-e) 40
+file size                   (blocks, -f) unlimited
+pending signals                     (-i) 8041
+max locked memory           (kbytes, -l) 64
+max memory size             (kbytes, -m) unlimited
+open files                          (-n) 1024
+pipe size                (512 bytes, -p) 8
+POSIX message queues         (bytes, -q) 819200
+real-time priority                  (-r) 0
+stack size                  (kbytes, -s) 8192
+cpu time                   (seconds, -t) unlimited
+max user processes                  (-u) 8041
+virtual memory              (kbytes, -v) unlimited
+file locks                          (-x) unlimited
+
+sysctl:
+fs.file-max = 1048576
+net.core.somaxconn = 128
+
+--- 6. ASTERISK STATUS ---
+Asterisk 20.6.0~dfsg+~cs6.13.40431414-2build5
+
+Channel                                                          Location                         State   Application(Data)             
+0 active channels
+0 active calls
+0 calls processed
+
+
+PBX Core settings
+-----------------
+  Version:                     20.6.0~dfsg+~cs6.13.40431414-2build5
+  ABI related Build Options:   OPTIONAL_API, TEST_FRAMEWORK
+  All Build Options:           OPTIONAL_API, TEST_FRAMEWORK
+  Maximum calls:               Not set
+  Maximum open file handles:   1024
+  Root console verbosity:      0
+  Current console verbosity:   0
+  Debug level:                 0
+  Trace level:                 0
+  Dump core on crash:          No
+  Maximum load average:        0.000000
+  Minimum free memory:         0 MB
+  Startup time:                01:54:57
+  Last reload time:            01:54:57
+  System:                      Linux/unknown built by nobody on unknown 2024-04-15 00:13:12 UTC
+  System name:                 
+  Entity ID:                   24:4b:fe:8d:ae:1d
+  PBX UUID:                    76fda021-b9b1-4951-b000-80e0f1a63a6a
+  Default language:            en
+  Language prefix:             Enabled
+  User name and group:         /
+  Running directory:           /
+  Executable includes:         Disabled
+  Transcode via SLIN:          Enabled
+  Transmit silence during rec: Disabled
+  Generic PLC:                 Enabled
+  Generic PLC on equal codecs: Disabled
+  Hide Msg Chan AMI events:    Disabled
+  Sounds search custom dir:    Disabled
+  Min DTMF duration::          80
+  Cache media frames:          Enabled
+  RTP use dynamic payloads:    1
+  RTP dynamic payload types:   35-63,96-127
+
+* Subsystems
+  -------------
+  Manager (AMI):               Enabled
+  Web Manager (AMI/HTTP):      Disabled
+  Call data records:           Enabled
+  Realtime Architecture (ARA): Disabled
+
+* Directories
+  -------------
+  Configuration file:          /etc/asterisk/asterisk.conf
+  Configuration directory:     /etc/asterisk
+  Module directory:            /usr/lib/x86_64-linux-gnu/asterisk/modules
+  Spool directory:             /var/spool/asterisk
+  Log directory:               /var/log/asterisk
+  Run/Sockets directory:       /var/run/asterisk
+  PID file:                    /var/run/asterisk/asterisk.pid
+  VarLib directory:            /var/lib/asterisk
+  Data directory:              /usr/share/asterisk
+  ASTDB:                       /var/lib/asterisk/astdb
+  IAX2 Keys directory:         /usr/share/asterisk/keys
+  AGI Scripts directory:       /usr/share/asterisk/agi-bin
+
+
+
+=============================================
+  END OF PHASE 1 REPORT
+=============================================

@@ -1,0 +1,14 @@
+AMI LOAD TEST SUMMARY
+Date: 2026-02-12T02:36:25.783739
+==================================================
+         total_calls: 200
+           succeeded: 200
+              failed: 0
+    failure_rate_pct: 0.0
+         ramp_time_s: 20.1
+          actual_cps: 10.0
+     avg_response_ms: 10.5
+     min_response_ms: 10.17
+     max_response_ms: 10.58
+     p95_response_ms: 10.53
+       peak_channels: 0
